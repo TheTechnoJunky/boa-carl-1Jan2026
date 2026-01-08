@@ -17,3 +17,11 @@ variable "AMI_ID" {
         type = number
         description = "number of vms to create"
       }
+
+      variable "ec2_instances" {
+        type = map(string)
+        default = {
+          "web" = "t3.micro"
+          "db" = "t2.small"
+        }
+      }
