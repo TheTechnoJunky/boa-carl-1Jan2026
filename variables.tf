@@ -12,3 +12,8 @@ variable "AMI_ID" {
         type = string
       #  default = "Carl-VM- Day2"
       }
+      
+      variable "novm" {
+        type = number
+        description = "number of vms to create"
+      }
